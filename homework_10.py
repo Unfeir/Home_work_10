@@ -103,7 +103,7 @@ def show_all_func(*args):
     """За цією командою бот виводить всі збереженні контакти з номерами телефонів у консоль."""
     contacts = ""
     
-    for k, v in address_book.data.items():
+    for k in address_book.data:
         
         contacts += f"{k} - {address_book[k].get_phones()}\n"
     
